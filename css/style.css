@@ -2,13 +2,18 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    height: 200vh;
     font-family: Arial, sans-serif;
 }
 header.header {
     background-color: black;
+    width: 100%;
+    height: 10vh;
 }
 .container {
-    width: 1350px;
+    width: 80%;
     margin: 0 auto;
 }
 .menu {
@@ -18,7 +23,7 @@ header.header {
     align-items: center;
     font-size: 20px;
     font-weight: bold;
-    height: 10vh;
+    height: 100%;
 }
 .green {
     color: #56BBA0;
@@ -103,9 +108,17 @@ i.fas:hover {
     color: -o-linear-gradient(top, #3cb0fd, #56BBA0);
     color: linear-gradient(to bottom, #3cb0fd, #56BBA0);
 }
+section.products {
+    height: 40vh;
+    display: flex;
+}
 div.wrap2 {
     margin: 40px 0;
     display: flex;
+    justify-content: space-between;
+}
+div.wrap2 div {
+    width: 30%;
 }
 div.images {
     position: relative;
@@ -116,5 +129,10 @@ img.item-chairs {
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 100%;
-    min-height: 100%
+    min-height: 100%;
+    z-index: -1;
+}
+div.item-3 {
+    border: 1px solid lightgrey;
+
 }
