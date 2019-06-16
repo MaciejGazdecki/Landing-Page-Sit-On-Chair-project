@@ -10,10 +10,10 @@ body{
 header.header {
     background-color: black;
     width: 100%;
-    height: 10vh;
+    height: 70px;
 }
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 .menu {
@@ -45,28 +45,31 @@ section.banner {
     background: -ms-linear-gradient(top, rgba(242,242,242,1) 6%, rgba(243,243,244,1) 44%, rgba(244,244,246,1) 72%, rgba(227,227,228,1) 91%, rgba(224,224,224,1) 95%);
     background: linear-gradient(to bottom, rgba(242,242,242,1) 6%, rgba(243,243,244,1) 44%, rgba(244,244,246,1) 72%, rgba(227,227,228,1) 91%, rgba(224,224,224,1) 95%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e0e0e0', GradientType=0 );
+    height: 650px;
+    width: 100%;
 }
 .banner-wrap {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 60vh;
+    height: 100%;
+    border: 1px solid black;
 }
 .fas {
     font-size: 48px;
 }
-img.black-chair {
+.black-chair {
     width: 100%;
 }
-div.wrap1 {
+.wrap1 {
     margin-bottom: 20px;
 }
-div.wrap1 h1 {
+.wrap1 h1 {
     font-size: 48px;
     text-align: center;
     padding-bottom: 20px;
 }
-div.wrap1 p {
+.wrap1 p {
     text-align: center;
     margin: 0 auto;
     width: 80%;
@@ -108,19 +111,23 @@ i.fas:hover {
     color: -o-linear-gradient(top, #3cb0fd, #56BBA0);
     color: linear-gradient(to bottom, #3cb0fd, #56BBA0);
 }
-section.products {
-    height: 40vh;
+.products {
+    height: 350px;
     display: flex;
+    margin-top: 40px;
+
 }
-div.wrap2 {
-    margin: 40px 0;
+.wrap2 {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    border: 1px solid black;
 }
-div.wrap2 div {
+.wrap2 div {
     width: 30%;
+    font-size: 20px;
 }
-div.images {
+.images {
     position: relative;
 }
 img.item-chairs {
@@ -128,11 +135,29 @@ img.item-chairs {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
 }
-div.item-3 {
+.images div.images-text {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(232,227,224, .6);
+    height: 90px;;
+    left: 0;
+    top: 65%;
+    line-height: 22px;
+}
+.images-text p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 15px;
+    border-bottom: 10px solid #56BBA0;
+    width: 43%;
+}
+div.wrap2 div.item-3 {
     border: 1px solid lightgrey;
-
+}
+.item-3 .item-3_wrap {
+    width: 100%;
+    font-size: 16px;
 }
