@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --green-colour: #56BBA0;
+    --light-grey: #C1C2C1;
+}
 body{
     height: 300vh;
     font-family: Arial, sans-serif;
@@ -26,7 +30,7 @@ header.header {
     height: 100%;
 }
 .green {
-    color: #56BBA0;
+    color: var(--green-colour);
 }
 .list_menu li {
     display: inline-block;
@@ -81,16 +85,16 @@ section.banner {
     font-size: 18px;
     line-height: 1.5em;
 }
-button.banner-button {
+button.banner-button, .join {
     display: block;
     margin: 40px auto;
     color: white;
-    background: #56BBA0;
-    background-image: -webkit-linear-gradient(top, #56BBA0, #56BBA0);
-    background-image: -moz-linear-gradient(top, #56BBA0, #56BBA0);
-    background-image: -ms-linear-gradient(top, #56BBA0, #56BBA0);
-    background-image: -o-linear-gradient(top, #56BBA0, #56BBA0);
-    background-image: linear-gradient(to bottom, #56BBA0, #56BBA0);
+    background: var(--green-colour);
+    background-image: -webkit-linear-gradient(top, var(--green-colour), var(--green-colour));
+    background-image: -moz-linear-gradient(top, var(--green-colour), var(--green-colour));
+    background-image: -ms-linear-gradient(top, var(--green-colour), var(--green-colour));
+    background-image: -o-linear-gradient(top, var(--green-colour), var(--green-colour));
+    background-image: linear-gradient(to bottom, var(--green-colour), var(--green-colour));
     -webkit-border-radius: 10;
     -moz-border-radius: 10;
     border-radius: 10px;
@@ -99,7 +103,7 @@ button.banner-button {
     text-decoration: none;
     outline: none;
 }
-button.banner-button:hover {
+button.banner-button:hover, .join:hover {
     background: #3cb0fd;
     background-image: -webkit-linear-gradient(top, #3cb0fd, #56BBA0);
     background-image: -moz-linear-gradient(top, #3cb0fd, #56BBA0);
@@ -107,6 +111,7 @@ button.banner-button:hover {
     background-image: -o-linear-gradient(top, #3cb0fd, #56BBA0);
     background-image: linear-gradient(to bottom, #3cb0fd, #56BBA0);
     text-decoration: none;
+    outline: none;
 }
 i.fas:hover {
     color: #3cb0fd;
@@ -155,7 +160,7 @@ img.item-chairs {
     font-size: 22px;
     font-weight: bold;
     margin: 20px 15px;
-    border-bottom: 10px solid #56BBA0;
+    border-bottom: 10px solid var(--green-colour);
     width: 43%;
 }
 .item-3 {
@@ -170,7 +175,7 @@ img.item-chairs {
     width: 35%;
     font-size: 22px;
     font-weight: bold;
-    border-bottom: 10px solid #56BBA0;
+    border-bottom: 10px solid var(--green-colour);
 }
 .item-3_wrap p:nth-child(2),
 .item-3_wrap p:nth-child(3) {
@@ -182,5 +187,107 @@ img.item-chairs {
 section.price-list {
     width: 100%;
     height: 1080px;
+    background-color: #F1F1F1;
+}
+.wrap-price-list{
+    padding-top: 60px;
+}
+.wrap-price-list > p {
+    font-size: 28px;
+    color: #4F4F4F;
+    width: 29%;
+    padding-bottom: 3px;
+    margin-bottom: 100px;
+    border-bottom: 10px solid var(--green-colour);
+}
+.price-plans-options {
+    display: flex;
+    justify-content: space-between;
+}
+.basic-plan,
+.standard-plan,
+.advance-plan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 800px;
+    border: 2px solid var(--light-grey);
+    background-color: #F9F9F9;
+}
+.price-plans-container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+.price-plans-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+.big-square {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: 2px solid var(--light-grey);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+}
+.small-square {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: var(--light-grey);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.plan {
+    font-size: 32px;
+    color: var(--green-colour);
+    text-align: center;
+}
+.price {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 3px solid var(--light-grey);
+    color: var(--light-grey);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.price-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.price-label p {
+    font-size: 34px;
+    font-weight: bold;
+}
+.price-label p:nth-child(1){
+    text-align: center;
+    font-size: 58px;
+}
+.price-plans-features {
+    font-size: 38px;
+    color: #8B8B8B;
+    text-align: center;
+}
+.price-plans-features p {
+    padding: 10px 0;
+}
+.price-plans-features p:nth-child(odd){
+    background-color: #E4E4E4;
+}
+.price-plans-features p:nth-child(even){
     background-color: #F1F1F1;
 }
