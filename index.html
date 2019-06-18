@@ -15,7 +15,7 @@
             <p>SIT <span class="green">ON</span> CHAIR</p>
         </div>
         <ul class="list_menu">
-            <li><a href="">O FIRMIE</a></li>
+            <li><a href="#">O FIRMIE</a></li>
             <li><a href="#">GALERIA</a></li>
             <li><a href="#">KONTAKT</a></li>
         </ul>
@@ -137,9 +137,15 @@
             <p>KONTAKT</p>
             <form class="main-form">
                 <div class="main-form-container1">
-                    <input type="text" name="name" placeholder="Imię">
-                    <input type="email" name="email" placeholder="email">
-                    <textarea type="text" name="wiadomość" placeholder="Wiadomość"></textarea>
+                    <label>
+                        <input type="text" name="name" placeholder="Imię">
+                    </label>
+                    <label>
+                        <input type="email" name="email" placeholder="email">
+                    </label>
+                    <label>
+                        <textarea name="wiadomość" placeholder="Wiadomość"></textarea>
+                    </label>
                 </div>
                 <div class="main-form-container2">
                     <div class="red-chair">
@@ -147,13 +153,31 @@
                     </div>
                     <div class="personal-data">
                         <input type="checkbox" name="personal-data-agreement" id="checkbox1">
-                        <label>Zgadzam się na przetwarzanie danych osobowych</label>
+                        <label for="checkbox1">Zgadzam się na przetwarzanie danych osobowych</label>
                     </div>
                     <input type="submit" value="WYŚLIJ" class="send-data">
                 </div>
             </form>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container footer-wrapper-main">
+            <div class="copyright">
+                <p>Copyright 2019 | All Rights Reserved. Sit On Chair</p>
+            </div>
+            <div class="footer-wrapper-nested">
+                <div class="social-media-icons">
+                    <img class="icons" src="images/flickr.png" alt="flickr">
+                    <img class="icons" src="images/vimeo.png" alt="vimeo">
+                    <img class="icons" src="images/pinterest.png" alt="printerest">
+                    <img class="icons" src="images/twitter.png" alt="twitter">
+                </div>
+                <div class="footer-company-name">
+                    <p>SIT <span>ON </span>CHAIR</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </main>
 <script src="js/main.js"></script>
 </body>

@@ -8,7 +8,6 @@
     --light-grey: #C1C2C1;
 }
 body{
-    height: 320vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 header.header {
@@ -81,7 +80,7 @@ section.banner {
 .wrap1 p:nth-child(1) {
     font-size: 54px;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     font-weight: 500;
 }
 .wrap1 p:nth-child(2) {
@@ -110,7 +109,7 @@ button.banner-button, .join, .send-data {
     outline: none;
     font-family: 'Raleway', sans-serif;
 }
-button.banner-button:hover, .join:hover, .send-data:hover {
+.banner-button:hover, .join:hover, .send-data:hover {
     background: #3cb0fd;
     background-image: -webkit-linear-gradient(top, #3cb0fd, #56BBA0);
     background-image: -moz-linear-gradient(top, #3cb0fd, #56BBA0);
@@ -119,6 +118,7 @@ button.banner-button:hover, .join:hover, .send-data:hover {
     background-image: linear-gradient(to bottom, #3cb0fd, #56BBA0);
     text-decoration: none;
     outline: none;
+    cursor: pointer;
 }
 i.fas:hover {
     color: #3cb0fd;
@@ -127,6 +127,7 @@ i.fas:hover {
     color: -ms-linear-gradient(top, #3cb0fd, #56BBA0);
     color: -o-linear-gradient(top, #3cb0fd, #56BBA0);
     color: linear-gradient(to bottom, #3cb0fd, #56BBA0);
+    cursor: pointer;
 }
 .products {
     height: 350px;
@@ -226,6 +227,47 @@ section.price-list {
     border: 2px solid var(--light-grey);
     background-color: #F9F9F9;
 }
+.basic-plan:hover,
+.standard-plan:hover,
+.advance-plan:hover {
+    background-color: var(--green-colour);
+    border: none;
+    padding: 2px;
+}
+.basic-plan:hover .big-square,
+.standard-plan:hover .big-square,
+.advance-plan:hover .big-square {
+    background-color: var(--green-colour);
+    border: none;
+}
+.basic-plan:hover .small-square,
+.standard-plan:hover .small-square,
+.advance-plan:hover .small-square {
+    background-color: white;
+}
+.basic-plan:hover .plan,
+.standard-plan:hover .plan,
+.advance-plan:hover .plan {
+    color: white;
+
+}
+.basic-plan:hover .price,
+.standard-plan:hover .price,
+.advance-plan:hover .price {
+    border: none;
+    color: var(--green-colour);
+}
+.basic-plan:hover .price-plans-features p:nth-child(odd),
+.standard-plan:hover .price-plans-features p:nth-child(odd),
+.advance-plan:hover .price-plans-features p:nth-child(odd){
+    background-color: white;
+}
+.basic-plan:hover .join,
+.standard-plan:hover .join,
+.advance-plan:hover .join {
+    background: white;
+    color: var(--green-colour);
+}
 .price-plans-container1 {
     display: flex;
     flex-direction: column;
@@ -270,6 +312,7 @@ section.price-list {
     height: 200px;
     border: 3px solid var(--light-grey);
     color: var(--light-grey);
+    background-color: white;
     border-radius: 50%;
     margin: 0 auto;
 }
@@ -306,7 +349,6 @@ section.price-list {
     display: flex;
     width: 100%;
     height: 400px;
-    border: 1px solid black;
 }
 .form-wrap {
     margin-top: 35px;
@@ -323,20 +365,28 @@ section.price-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 65%;
+    width: 60%;
     height: 100%;
+}
+.main-form-container1 label:nth-child(1),
+.main-form-container1 label:nth-child(2) {
+    height: 15%;
+    width: 100%;
+}
+.main-form-container1 label:nth-child(3) {
+    height: 50%;
+    width: 100%;
 }
 .main-form-container1 input,
 .main-form-container1 textarea {
     display: block;
     width: 100%;
-    height: 15%;
+    height: 100%;
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
     border: 1px solid var(--green-colour);
 }
 .main-form-container1 textarea {
-    height: 50%;
     text-align: start;
     resize: none;
 }
@@ -355,20 +405,63 @@ section.price-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 35%;
+    width: 40%;
     height: 100%;
-    border: 1px solid black;
+    padding-left: 110px;
 }
 .red-chair {
     margin: 0 auto;
+}
+.personal-data {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 .personal-data label {
     color: var(--light-grey);
     font-size: 24px;
     font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+}
+input[type=checkbox] {
+    width: 75px;
+    height: 75px;
+    border: 1px solid var(--green-colour);
+}
+input[type="checkbox"]:checked {
+    background:url("../images/form_ok.jpg");
 }
 .send-data {
     font-weight: 700;
-    font-size: 34px;
+    font-size: 38px;
     margin: 0;
+    padding: 20px 0;
+}
+footer.footer {
+    height: 200px;
+}
+.footer-wrapper-main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+.footer-wrapper-nested {
+    display: flex;
+    justify-content: space-between;
+    width: calc(40% - 110px);
+}
+.copyright p,
+.footer-company-name {
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #8B8B8B;
+    font-weight: 500;
+}
+.footer-company-name span {
+    font-weight: 700;
+}
+.icons {
+    width: 40px;
+    height: 40px;
 }
