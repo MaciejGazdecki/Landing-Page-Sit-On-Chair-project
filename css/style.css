@@ -131,19 +131,40 @@ section.banner {
 }
 .product {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .fa-chevron-left,
 .fa-chevron-right {
     font-size: 68px;
 }
-.black-chair {
-    width: 100%;
+.main-image {
+    position: relative;
+    min-width: calc(300px * 1.5);
+    min-height: calc(275px * 1.5);
+    margin-left: 30px;
+}
+.black-chair,
+.orange-chair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: calc(300px * 1.5);
+    min-height: calc(275px * 1.5);
+}
+.orange-chair {
+    transform: translate(-47%, -43%);
+}
+.image-off {
+    display: none;
 }
 .wrap1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width:50%;
 }
 .wrap1 p:nth-child(1) {
     font-size: 54px;
