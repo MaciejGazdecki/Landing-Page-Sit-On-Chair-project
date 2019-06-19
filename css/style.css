@@ -349,6 +349,7 @@ section.price-list {
     display: flex;
     width: 100%;
     height: 400px;
+    justify-content: space-between;
 }
 .form-wrap {
     margin-top: 35px;
@@ -365,7 +366,7 @@ section.price-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 60%;
+    width: 50%;
     height: 100%;
 }
 .main-form-container1 label:nth-child(1),
@@ -405,9 +406,8 @@ section.price-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 43%;
     height: 100%;
-    padding-left: 110px;
 }
 .red-chair {
     margin: 0 auto;
@@ -415,22 +415,45 @@ section.price-list {
 .personal-data {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+}
+.checbox-style {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    user-select: none;
+    justify-content: space-between;
+    cursor: pointer;
 }
 .personal-data label {
     color: var(--light-grey);
     font-size: 24px;
     font-family: 'Raleway', sans-serif;
-    padding-left: 10px;
 }
-input[type=checkbox] {
-    width: 75px;
-    height: 75px;
+.personal-data input {
+    display: none;
+}
+.checkmark {
+    background-color: white;
     border: 1px solid var(--green-colour);
+    position: relative;
+    height: 60px;
+    width: 60px;
 }
-input[type="checkbox"]:checked {
-    background:url("../images/form_ok.jpg");
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    background-image: url("../images/form_ok.jpg");
+    background-repeat: no-repeat;
+    background-position: center;;
+    width: 60px;
+    height: 60px;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
 }
 .send-data {
     font-weight: 700;
@@ -449,7 +472,7 @@ footer.footer {
 .footer-wrapper-nested {
     display: flex;
     justify-content: space-between;
-    width: calc(40% - 110px);
+    width: calc(50% - 110px);
 }
 .copyright p,
 .footer-company-name {
