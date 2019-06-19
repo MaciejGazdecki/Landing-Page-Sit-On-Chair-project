@@ -10,7 +10,7 @@
             menuItem.addEventListener('mouseover', () => aboutCompanyMenu.classList.remove('on'))});
     })();
 
-    (function showArrow() {
+    (function showScrollArrow() {
         document.addEventListener('scroll', () => {
             if(window.scrollY > 350) {
                 document.querySelector('.arrow-up').classList.remove('arrow-off')
@@ -20,7 +20,7 @@
         })
     })();
 
-    (function scrollTop() {
+    (function scrollTop() { // I used jQuery here
         $('.arrow-up').on('click', () => {
             $("html").animate({
                 scrollTop:0

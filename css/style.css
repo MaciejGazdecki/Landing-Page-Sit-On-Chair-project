@@ -244,6 +244,15 @@ img.item-chairs {
     transform: translate(-50%, -50%);
     min-width: 90%;
     min-height: 90%;
+    z-index: -1;
+}
+.images:hover img.item-chairs {
+    min-width: calc(329px * 1.6);
+    min-height: calc(225px * 1.6);
+}
+.images:hover div.images-text {
+    width: calc(329px * 1.6);
+    transform: translateX(-35px);
 }
 .images .images-text {
     position: absolute;
