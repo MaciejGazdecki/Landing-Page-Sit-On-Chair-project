@@ -422,9 +422,7 @@ section.price-list {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    position: relative;
     user-select: none;
-    justify-content: space-between;
     cursor: pointer;
 }
 .personal-data label {
