@@ -31,15 +31,57 @@ header.header {
     font-size: 20px;
     font-weight: bold;
     height: 100%;
+    position: relative;
 }
 .company_name span {
     font-weight: 700;
+}
+.list_menu {
+    height: 100%;
+    line-height: 70px;
 }
 .list_menu li {
     display: inline-block;
     padding-left: 15px;
 }
 .list_menu a {
+    text-decoration: none;
+    color: white;
+}
+.about-company {
+    position: absolute;
+    top: 80px;
+    left: 1180px;
+    display: block;
+    margin-top: -10px;
+}
+.about-company-square {
+    height: 15px;
+    width: 15px;
+    background-color:black;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 45%;
+    top: calc((-15px) / 2);
+}
+.company-menu {
+    list-style: none;
+    background-color: black;
+    padding: 0 20px 20px;
+    display: none;
+    position: relative;
+    margin-top: 10px;
+}
+.on {
+    display: block;
+}
+.company-menu li {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+.company-menu a {
     text-decoration: none;
     color: white;
 }
