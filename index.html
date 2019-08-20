@@ -17,18 +17,16 @@
                 <p>SIT <span class="green">ON</span> CHAIR</p>
             </div>
             <ul class="list_menu">
-                <li class="about">O FIRMIE</li>
-                <li class="menu-items"><a href="#">GALERIA</a></li>
-                <li class="menu-items"><a href="#">KONTAKT</a></li>
+                <li class="menu-items" id="about">O FIRMIE</li>
+                    <ul class="company-menu">
+                        <div class="about-company-square"></div>
+                        <li><a href="#">Aktualności</a></li>
+                        <li><a href="#">Nasz team</a></li>
+                        <li><a href="#">Historia</a></li>
+                    </ul>
+                <li class="menu-items all-li"><a href="#">GALERIA</a></li>
+                <li class="menu-items all-li"><a href="#">KONTAKT</a></li>
             </ul>
-            <div class="about-company">
-                <ul class="company-menu">
-                    <div class="about-company-square"></div>
-                    <li><a href="#">Aktualności</a></li>
-                    <li><a href="#">Nasz team</a></li>
-                    <li><a href="#">Historia</a></li>
-                </ul>
-            </div>
         </div>
     </header>
     <main>
@@ -37,7 +35,7 @@
         </div>
         <section class="banner">
             <div class="container banner-wrap">
-                <div class="left-arrow"><i class="fas fa-chevron-left green"></i></div>
+                <div class="left-arrow arrow"><i class="fas fa-chevron-left green"></i></div>
                 <div class="product">
                     <div class="main-image">
                         <img src="images/black_chair.png" alt="chair" class="black-chair">
@@ -51,20 +49,20 @@
                         <button class="banner-button">ZOBACZ WIĘCEJ</button>
                     </div>
                 </div>
-                <div class="right-arrow"><i class="fas fa-chevron-right green"></i></div>
+                <div class="right-arrow arrow"><i class="fas fa-chevron-right green"></i></div>
             </div>
         </section>
         <section class="container products">
             <div class="wrap2">
-                <div class="images">
+                <div class="images" id="box-image-1">
                     <img src="images/box1_img.jpg" alt="chair" class="item-chairs">
-                    <div class="images-text">
+                    <div class="images-text" id="text-box-1">
                         <p>Chair CLAIR</p>
                     </div>
                 </div>
-                <div class="images">
+                <div class="images" id="box-image-2">
                     <img src="images/box2_img.jpg" alt="chair" class="item-chairs">
-                    <div class="images-text">
+                    <div class="images-text" id="text-box-2">
                         <p>Chair MARGARITA</p>
                     </div>
                 </div>

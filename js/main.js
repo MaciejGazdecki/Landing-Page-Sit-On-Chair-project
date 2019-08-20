@@ -1,14 +1,12 @@
-(function mainPageAnimations() {
-    (function showHidemenu() {
-        //IIFE which control showing and hiding small menu, I used ES6 arrow functions, which are shorter, and removed{}
-        //because there is only one line of code. I put tohether query Selectors with EventListeners. I used forEach, to
-        // addEventListener to nodelist created by querySelectorAll.
+document.addEventListener('DOMContentLoaded', function(){
+    (function dropdown() {
         const aboutCompanyMenu = document.querySelector('.company-menu');
-        document.querySelector('.about').addEventListener('mouseover', () =>
+        const aboutLi = document.getElementById('about');
+        aboutLi.addEventListener('mouseover', () =>
             aboutCompanyMenu.classList.add('on'));
         document.querySelector('.banner').addEventListener('mouseover', () =>
             aboutCompanyMenu.classList.remove('on'));
-        document.querySelectorAll('.menu-items').forEach((menuItem) => {
+        document.querySelectorAll('.all-li').forEach((menuItem) => {
             menuItem.addEventListener('mouseover', () =>
                 aboutCompanyMenu.classList.remove('on'))
         });
@@ -32,11 +30,33 @@
         })
     })();
 
-    (function switchImages() {
-        setInterval(() => {
+    (function banner() {
+        const arrows = document.querySelectorAll('.arrow');
+        const time = 4000;
+        const changeSlide = () => {
             document.querySelector('.orange-chair').classList.toggle('image-off');
             document.querySelector('.black-chair').classList.toggle('image-off');
-        }, 3500);
+        };
+        let idInterval = setInterval(changeSlide,time);
+        arrows.forEach(arrow => {
+            arrow.addEventListener('click', () => {
+                changeSlide();
+                clearInterval(idInterval);
+                idInterval = setInterval(changeSlide, time);
+            })
+        });
     })();
-})();
+
+    (function hideNames() {
+        const imagesDivs = document.querySelectorAll('.images');
+        imagesDivs.forEach(function (image) {
+            image.addEventListener('mouseover', function () {
+               this.lastElementChild.classList.toggle('arrow-off')
+            });
+            image.addEventListener('mouseout', function () {
+                this.lastElementChild.classList.toggle('arrow-off')
+            });
+        })
+    })();
+});
 
