@@ -16,7 +16,7 @@ header.header {
     height: 70px;
 }
 .container {
-    width: 80%;
+    width: 1600px;
     margin: 0 auto;
 }
 .green {
@@ -239,24 +239,20 @@ img.item-chairs {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 90%;
-    min-height: 90%;
+    min-width: 100%;
+    min-height: 100%;
     z-index: -1;
 }
 .images:hover img.item-chairs {
     min-width: calc(329px * 1.6);
     min-height: calc(225px * 1.6);
 }
-.images:hover div.images-text {
-    width: calc(329px * 1.6);
-    transform: translateX(-35px);
-}
 .images .images-text {
     position: absolute;
-    width: 100%;
+    width: 106%;
     background-color: rgba(232,227,224, .6);
     height: 90px;;
-    left: 0;
+    left: -3%;
     top: 65%;
     line-height: 22px;
 }
@@ -269,7 +265,8 @@ img.item-chairs {
 }
 .item-3 {
     border: 1px solid lightgrey;
-    height: 90%;
+    height: 100%;
+    width: 100%;
     align-self: center;
 }
 .item-3 .item-3_wrap {
@@ -510,7 +507,7 @@ section.price-list {
 }
 .personal-data {
     display: flex;
-    width: 100%;
+    width: 96%;
     align-items: center;
     flex-direction: column;
 }
