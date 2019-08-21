@@ -58,5 +58,19 @@ document.addEventListener('DOMContentLoaded', function(){
             });
         })
     })();
+    (function showHideOrderSection() {
+        const btn = document.querySelector('.order');
+        const orderSection = document.getElementById('order-section');
+        const body = document.querySelector('body');
+        const closeIcon = document.getElementById('close-icon');
+        btn.addEventListener('click', () => {
+            orderSection.classList.add('on');
+            body.classList.add('noScroll');
+        });
+        closeIcon.addEventListener('click', () => {
+            orderSection.classList.remove('on');
+            body.classList.remove('noScroll');
+        })
+    })();
 });
 
