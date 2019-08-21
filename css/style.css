@@ -71,9 +71,10 @@ header.header {
     position: absolute;
     margin-top: 2px;
     border-radius: 4%;
+    z-index: 2;
 }
 .on {
-    display: block;
+    display: block !important;
 }
 .company-menu li {
     font-size: 18px;
@@ -835,9 +836,6 @@ footer.footer {
 }
 #order-section {
    display: none;
-}
-.on {
-    display: block !important;
 }
 
 .noScroll {
