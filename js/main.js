@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     })();
 
-    (function scrollTop() { // I used jQuery here
+    (function scrollTop() {
         $('.arrow-up').on('click', () => {
             $("html").animate({
                 scrollTop: 0

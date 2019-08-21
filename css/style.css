@@ -595,6 +595,7 @@ footer.footer {
     transform: translate(-50%, -50%);
     border: 1px solid black;
     border-radius: 5px;
+    z-index: 3;
 }
 .application h3 {
     color: #575757;
@@ -830,6 +831,7 @@ footer.footer {
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
 #order-section {
    display: none;
