@@ -83,5 +83,8 @@ document.addEventListener('DOMContentLoaded', function(){
             console.log(listPanels);
 
     })();
+    (function placeOrder() {
+
+    })();
 });
 
