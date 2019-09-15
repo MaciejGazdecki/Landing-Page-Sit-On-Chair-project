@@ -72,5 +72,16 @@ document.addEventListener('DOMContentLoaded', function(){
             body.classList.remove('noScroll');
         })
     })();
+    (function placeOrder() {
+            const listArrows = document.querySelectorAll('.list_arrow');
+            const listPanels = document.querySelectorAll('.list_panel');
+            listArrows.forEach(function (listArrow) {
+                listArrow.addEventListener('click', function () {
+                    this.nextElementSibling.classList.toggle('on');
+                });
+            });
+            console.log(listPanels);
+
+    })();
 });
 

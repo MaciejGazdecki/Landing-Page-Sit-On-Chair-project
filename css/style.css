@@ -622,7 +622,7 @@ footer.footer {
 .drop_down_list {
     border:1px solid #8de0d2;
     width: 280px;
-    height:38px;
+    height:48px;
     background-color: white;
     margin-top:22px;
     padding: 8px 12px;
@@ -845,4 +845,7 @@ footer.footer {
     top: -32px;
     right: -32px;
     position: absolute;
+}
+.fa-window-close {
+    font-size: 2.5rem;
 }
