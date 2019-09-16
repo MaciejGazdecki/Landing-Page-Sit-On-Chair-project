@@ -15,6 +15,8 @@ Recently I addded place chair section. Over there you can fin a form, when you c
 
 I hope you like it :-)
 
+https://maciejgazdecki.github.io/Landing-Page-Sit-On-Chair-project/.
+
 
 Maciej
 
