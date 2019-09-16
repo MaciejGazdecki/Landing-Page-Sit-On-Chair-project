@@ -156,7 +156,7 @@
         <section id="order-section">
         <section class="application-wrapper">
             <section class="application">
-                <div id="close-icon"><img src="https://img.icons8.com/cute-clipart/64/000000/close-window.png"></div>
+                <div id="close-icon"><i class="fas fa-window-close"></i></div>
                 <div class="main_width">
                     <section class="choice_part inline">
                         <header>
@@ -168,35 +168,33 @@
                             <div class="drop_down_list">
                                 <span class="list_label">Wybierz rodzaj</span>
                                 <span class="list_arrow"></span>
-                                <ul class="list_panel">
-                                    <li>Clair</li>
-                                    <li>Margarita</li>
-                                    <li>Selena</li>
+                                <ul class="list_panel" id="chair-type">
+                                    <li data-price="300">Clair</li>
+                                    <li data-price="250">Margarita</li>
+                                    <li data-price="350">Selena</li>
                                 </ul>
                             </div>
                             <div class="drop_down_list">
                                 <span class="list_label">Wybierz kolor</span>
                                 <span class="list_arrow"></span>
-                                <ul class="list_panel">
-                                    <li>Czerwony</li>
-                                    <li>Czarny</li>
-                                    <li>Pomarańczowy</li>
+                                <ul class="list_panel" id="chair-color">
+                                    <li data-price="100">Czerwony</li>
+                                    <li data-price="150">Czarny</li>
+                                    <li data-price="125">Pomarańczowy</li>
                                 </ul>
                             </div>
                             <div class="drop_down_list">
                                 <span class="list_label">Wybierz materiał</span>
                                 <span class="list_arrow"></span>
-                                <ul class="list_panel">
-                                    <li>Tkanina</li>
-                                    <li>Skóra</li>
+                                <ul class="list_panel" id="chair-material">
+                                    <li data-price="200">Tkanina</li>
+                                    <li data-price="500">Skóra</li>
                                 </ul>
                             </div>
                             <div class="checkbox check-box">
-                                <input type="checkbox" id="transport" data-transport-price="200">
+                                <input type="checkbox" id="transport" value="200">
                                 <label for="transport">Transport</label>
                             </div>
-                            <!--<div class="checkbox"></div>-->
-                            <!--<span class="list_label inline_text">Transport</span>-->
                         </div>
                     </section>
 
@@ -211,20 +209,24 @@
                         </header>
 
                         <div class="summary_panel">
-                            <div class="panel_left">
-                                <h4 class="title">Twój fotel</h4>
-                                <span class="color"></span>
-                                <span class="pattern"></span>
-                                <span class="transport"></span>
+                            <div id="panels">
+                                <div class="panel_left">
+                                    <h4 class="title"></h4>
+                                    <span class="color"></span>
+                                    <span class="pattern"></span>
+                                    <span class="transport"></span>
+                                </div>
+                                <div class="panel_right">
+                                    <h4 class="title value"></h4>
+                                    <span class="color value"></span>
+                                    <span class="pattern value"></span>
+                                    <span class="transport value"></span>
+                                </div>
                             </div>
-                            <div class="panel_right">
-                                <h4 class="title value"></h4>
-                                <span class="color value"></span>
-                                <span class="pattern value"></span>
-                                <span class="transport value"></span>
+                            <div id="sum">
+                                <div class="sum_label">SUMA</div>
+                                <div class="sum"><strong></strong></div>
                             </div>
-                            <div class="sum_label">SUMA</div>
-                            <div class="sum"><strong></strong></div>
                         </div>
                         <a href="" class="green_button">Zamawiam</a>
                     </section>
