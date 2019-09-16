@@ -751,7 +751,7 @@ footer.footer {
 
 .panel_right {
     display: inline-block;
-    width: 100px;
+    width: 170px;
     border-left:1px solid #e7e7e7;
     text-align: right;
     vertical-align: top;
@@ -788,7 +788,7 @@ footer.footer {
 
 .sum {
     display: inline-block;
-    width: 100px;
+    width: 125px;
     text-align: right;
     margin-top: 10px;
     font-size: 22px;
@@ -855,4 +855,7 @@ footer.footer {
 }
 .fa-window-close {
     font-size: 2.5rem;
+}
+#sum {
+    display: flex;
 }
