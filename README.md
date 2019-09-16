@@ -9,6 +9,12 @@ I added something extra from me to this project. I created a few simple animatio
     • a simple drop-down menu,<br>
     • an effect when hovering the images of the second section;<br>
     • effects when hovering the price plans,<br>
+    
+Recently I addded place chair section. Over there you can fin a form, when you can choose a several option and place the order. It is of course only the simulation.
 
 
 I hope you like it :-)
+
+
+Maciej
+
